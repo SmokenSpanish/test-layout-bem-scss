@@ -1,0 +1,65 @@
+/* Мини-ресет */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 16px/1.5 $font-base;
+  color: $color-text;
+  background: $color-bg;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: min(100% - 2 * $gap, $container);
+  margin-inline: auto;
+}
+
+.section-title {
+  font-size: clamp(22px, 2.4vw, 48px);
+  margin: 0 0 80px;
+}
+
+.section-subtitle {
+  color: $color-black;
+  margin: 0 0 80px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .8rem 1.2rem;
+  border-radius: $radius;
+  border: 0;
+  cursor: pointer;
+  transition: transform .2s ease, opacity .2s ease, background-color .2s;
+}
