@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "npm-run-all --parallel watch:sass serve",
-    "build": "sass src/scss/main.scss:public/main.css --no-source-map --style=compressed",
-    "watch:sass": "sass --watch src/scss/main.scss:public/main.css --style=expanded",
+    "build": "sass src/scss/main.scss:src/public/main.css --no-source-map --style=compressed",
+    "watch:sass": "sass --watch src/scss/main.scss:src/public/main.css --style=expanded",
     "serve": "http-server src -p 5173"
   },
   "devDependencies": {

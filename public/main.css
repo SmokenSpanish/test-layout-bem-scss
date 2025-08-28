@@ -1,6 +1,18 @@
-.page__title {
-  font-size: 24px;
-  color: #333;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 12 |   font: 16px/1.5 $font-base;
+ *    |                  ^^^^^^^^^^
+ *    '
+ *   src\scss\_normalize.scss 12:18  @use
+ *   src\scss\main.scss 1:1          root stylesheet */
 
-/*# sourceMappingURL=main.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 12 \2502    font: 16px/1.5 $font-base;\d\a    \2502                   ^^^^^^^^^^\a    \2575 \a   src\\scss\\_normalize.scss 12:18  @use\a   src\\scss\\main.scss 1:1          root stylesheet";
+}

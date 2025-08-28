@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
-    <link rel="stylesheet" href="./scss/main.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>LOREMIPSUM.NET — Бизнес-услуги</title>
+    <meta name="description" content="Адаптивная вёрстка: БЭМ, SCSS, доступная форма, липкая шапка." />
+    <link rel="preload" href="/public/main.css" as="style" />
+    <link rel="stylesheet" href="/public/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" href="/public/favicon.ico" />
 </head>
-<body>
-<h1 class="page__title">Hello, world!</h1>
+<body class="page">
+<header class="header" data-header>
+    <div class="container header__inner">
+        <a class="header__logo" href="#" aria-label="LOREMIPSUM.NET">
+            <span class="header__brand">LOREMIPSUM.<b>NET</b></span>
+        </a>
+        <button class="header__burger" type="button" aria-expanded="false" aria-controls="nav" data-burger>
+            <span class="header__burger-line"></span>
+        </button>
+        <nav class="nav header__nav" id="nav" aria-label="Главная навигация">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#business">Бизнес</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="#prices">Цены</a></li>
+                <li class="nav__item"><a class="nav__link" href="#order">Оформить заказ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 <script src="./js/main.js"></script>
 </body>
 </html>
