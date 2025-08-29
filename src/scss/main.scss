@@ -5,7 +5,11 @@
 @use "blocks/banner";
 @use "blocks/footer";
 @use "blocks/steps";
+@use "blocks/form";
+@use "blocks/custom-select";
 @use "components/button";
+@use "components/steps-item";
+@use "components/row";
 
 .page {
   min-height: 100%;

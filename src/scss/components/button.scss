@@ -23,11 +23,11 @@
     color: $color-white;
 
     &:hover {
-      background-color: darken($color-accent, 8%);
+      background-color: $color-hover;
     }
 
     &:active {
-      background-color: darken($color-accent, 15%);
+      background-color: $color-hover;
     }
   }
 
@@ -37,11 +37,36 @@
     color: $color-black;
 
     &:hover {
-      background-color: lighten($color-border, 42%);
+      background-color: $color-gray-hover;
     }
 
     &:active {
-      background-color: lighten($color-border, 35%);
+      background-color: $color-gray-hover;
+    }
+  }
+
+  &--file {
+    width: 100%;
+    background-color: $color-white;
+    color: $color-black;
+    font-size: 15px;
+
+    &:hover {
+      border-color: $color-accent;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+
+  &--submit {
+    min-width: 370px;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-md) {
+      min-width: 100%;
     }
   }
 }

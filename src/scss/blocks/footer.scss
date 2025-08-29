@@ -1,0 +1,9 @@
+@use "../index" as *;
+
+.footer {
+  padding: 26px 0;
+  background: $color-grey;
+  color: $color-white;
+  text-align: center;
+  font-size: 13px;
+}
