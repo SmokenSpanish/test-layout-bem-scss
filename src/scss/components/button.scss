@@ -63,7 +63,7 @@
 
   &--submit {
     min-width: 370px;
-    margin: 0 auto;
+    margin: 10px auto 0;
 
     @media (max-width: $breakpoint-md) {
       min-width: 100%;
