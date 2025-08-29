@@ -16,6 +16,17 @@
       gap: 30px 0;
     }
   }
+
+  &--no-gap {
+    gap: 0;
+  }
+
+  &--footer {
+    @media (max-width: $breakpoint-lg) {
+      grid-template-columns: 1fr;
+      gap: 30px 0;
+    }
+  }
 }
 
 

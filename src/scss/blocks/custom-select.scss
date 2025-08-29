@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
+    background: $color-white;
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 12px;
@@ -20,6 +20,7 @@
 
     &.open {
       background-color: $color-grey;
+      color: $color-white;
     }
 
     &:hover, &.open {
