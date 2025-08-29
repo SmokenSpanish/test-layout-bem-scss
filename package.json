@@ -7,8 +7,7 @@
     "build": "sass src/scss/main.scss:src/public/main.css --no-source-map --style=compressed",
     "watch:sass": "sass --watch src/scss/main.scss:src/public/main.css --style=expanded",
     "serve": "http-server src -p 5173",
-    "predeploy": "cp -r src/* dist/",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d ."
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
