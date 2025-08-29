@@ -6,8 +6,8 @@
     "dev": "npm-run-all --parallel watch:sass serve",
     "build": "sass src/scss/main.scss:src/public/main.css --no-source-map --style=compressed",
     "watch:sass": "sass --watch src/scss/main.scss:src/public/main.css --style=expanded",
-    "serve": "http-server src -p 5173",
-    "deploy": "gh-pages -d ."
+    "predeploy": "cp -r src/index.html src/public/",
+    "deploy": "gh-pages -d src/public"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
