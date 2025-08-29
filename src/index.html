@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>LOREMIPSUM.NET — Бизнес-услуги</title>
-    <meta name="description" content="Адаптивная вёрстка: БЭМ, SCSS, доступная форма, липкая шапка." />
-    <link rel="preload" href="/public/main.css" as="style" />
-    <link rel="stylesheet" href="/public/main.css" />
+    <meta name="description" content="Адаптивная вёрстка: БЭМ, SCSS, доступная форма, липкая шапка."/>
+    <link rel="preload" href="/public/main.css" as="style"/>
+    <link rel="stylesheet" href="/public/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="icon" href="/public/favicon.ico" />
+    <link rel="icon" href="/public/favicon.ico"/>
 </head>
 <body class="page">
 <header class="header" data-header>
@@ -30,6 +30,35 @@
         </nav>
     </div>
 </header>
-<script src="./js/main.js"></script>
+<main class="main">
+    <section class="banner" id="business">
+        <div class="container banner__inner">
+            <div class="banner__content">
+                <h1 class="banner__title">
+                    <span class="banner__title-accent">LOREM IPSUM</span> dolor sit amet
+                    consectetur <span class="banner__title-accent">adipiscing</span>
+                </h1>
+                <h4 class="banner__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</h4>
+                <ul class="banner__list">
+                    <li class="banner__item">Totam rem aperiam eaque ipsa</li>
+                    <li class="banner__item">Sit voluptatem accusantium doloremque laudantium</li>
+                    <li class="banner__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                </ul>
+                <div class="banner__actions">
+                    <a class="btn btn--order" href="#order">Заказать</a>
+                    <a class="btn btn--more" href="#about">Подробнее</a>
+                </div>
+            </div>
+            <div class="banner__media">
+                <picture>
+                    <source srcset="/public/images/Banner.webp" type="image/webp"/>
+                    <img class="banner__img" src="/public/images/Banner.webp" alt="Деловые партнёры обсуждают проект"
+                         loading="eager" decoding="async"/>
+                </picture>
+            </div>
+        </div>
+    </section>
+</main>
+    <script src="./js/main.js"></script>
 </body>
 </html>

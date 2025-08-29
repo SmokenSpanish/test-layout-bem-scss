@@ -1,13 +1,11 @@
-@use "../variables" as *;
-@use "../mixins" as *;
+@use "../index" as *;
 
 .header {
   width: 100%;
-  position: sticky;
+  position: absolute;
   top: 0;
   z-index: 60;
   background: #10101DE5;
-  backdrop-filter: blur(6px);
   box-shadow: 0 2px 8px rgba(8, 10, 14, 0.25);
 
   &__inner {

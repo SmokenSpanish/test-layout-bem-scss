@@ -6,11 +6,12 @@ $color-black: #000000;
 $color-white: #FFFFFF;
 $color-hover: #42A9ED;
 $color-grey: #3D4050D9;
+$color-border: #6F6D7B;
 $container: 1172px;
 $gap: 30px;
 $radius: 4px;
 $transition-fast: .3s ease-in-out;
 
+$breakpoint-lg: 1200px;
 $breakpoint-md: 768px;
-$breakpoint-sm: 640px;
-$breakpoint-xs: 420px;
+$breakpoint-xs: 568px;

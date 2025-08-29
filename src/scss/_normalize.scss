@@ -12,7 +12,6 @@ body {
   margin: 0;
   font-family: $font-base;
   font-size: 18px;
-  background: $color-bg;
 }
 
 img {
@@ -64,16 +63,4 @@ input, select, textarea {
 .section-subtitle {
   color: $color-black;
   margin: 0 0 80px;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: .5rem;
-  padding: .8rem 1.2rem;
-  border-radius: $radius;
-  border: 0;
-  cursor: pointer;
-  transition: transform .2s ease, opacity .2s ease, background-color .2s;
 }

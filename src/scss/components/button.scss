@@ -1,0 +1,47 @@
+@use "../index" as *;
+
+.btn {
+  min-width: 185px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  border-radius: $radius;
+  border: 1px solid;
+  cursor: pointer;
+  transition: transform .2s ease, opacity .2s ease, background-color .2s;
+  font-size: 13px;
+  text-transform: uppercase;
+
+  @media (max-width: $breakpoint-xs) {
+    min-width: 100%;
+  }
+
+  &--order {
+    border-color: $color-white;
+    background-color: $color-accent;
+    color: $color-white;
+
+    &:hover {
+      background-color: darken($color-accent, 8%);
+    }
+
+    &:active {
+      background-color: darken($color-accent, 15%);
+    }
+  }
+
+  &--more {
+    border-color: $color-border;
+    background-color: $color-white;
+    color: $color-black;
+
+    &:hover {
+      background-color: lighten($color-border, 42%);
+    }
+
+    &:active {
+      background-color: lighten($color-border, 35%);
+    }
+  }
+}
