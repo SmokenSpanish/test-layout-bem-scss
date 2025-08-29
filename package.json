@@ -8,7 +8,8 @@
     "build": "sass src/scss/main.scss:dist/main.css --no-source-map --style=compressed",
     "copy:index": "copy src\\index.html dist\\index.html",
     "copy:images": "xcopy src\\public\\images dist\\images /E /I /Y",
-    "predeploy": "npm run build && npm run copy:index && npm run copy:images",
+    "copy:js": "copy src\\js\\main.js dist\\main.js",
+    "predeploy": "npm run build && npm run copy:index && npm run copy:images && npm run copy:js",
     "deploy": "gh-pages -d dist --repo https://github.com/SmokenSpanish/test-layout-bem-scss.git"
   },
   "devDependencies": {
